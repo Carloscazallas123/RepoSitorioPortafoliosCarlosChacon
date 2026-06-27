@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './componente-banner.css',
 })
 export class ComponenteBanner {
-
+    abierto: boolean = false;
     constructor(){}
 }

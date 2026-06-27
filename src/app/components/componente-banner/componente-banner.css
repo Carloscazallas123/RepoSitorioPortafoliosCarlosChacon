@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Share+Tech+Mono&display=swap');
+
+.ContenedorBanner{
+    display: flex;
+    background-image: url('./../../../assets/Images/BackGrounds/BackGroundBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.ContenedorTerminal{ padding-left: 100px; }
+
+.contenedor-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh; 
+  padding: 20px;
+  padding-top: 200px;
+}
+.ventana-terminal {
+  width: 580px;
+  max-width: 750px;
+  background-color: #111111; 
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Sombra elegante */
+  overflow: hidden;
+}
+
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px 15px;
+  border-bottom: 1px solid #222222;
+  position: relative;
+}
+
+.boton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.botones-control { display: flex; gap: 8px; }
+.cerrar { background-color: #ff5f56; }
+.minimizar { background-color: #ffbd2e; }
+.maximizar { background-color: #27c93f; }
+.cuerpo-terminal { padding: 30px; background-color: #0d0d0d; }
+
+.titulo-ventana {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Share Tech Mono', monospace;
+  color: #e4dfdf;
+  font-size: 0.9rem;
+}
+
+.boton-desplegable {
+  background: none;
+  border: none;
+  color: #e4dfdf;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.boton-desplegable:hover {
+  color: #DFB76C; /* Se ilumina con tu dorado al pasar el cursor */
+}
+
+/* Pequeña animación para la flecha */
+.flecha {
+  font-size: 0.9rem;
+  color: #DFB76C;
+  transition: transform 0.2s ease;
+}
+
+.flecha.rotada {
+  transform: rotate(90deg); /* Gira hacia abajo cuando está abierto */
+}
+
+/* IDS */
+#MiFoto{ height: 750px; }
+#TituloNombre{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #DFB76C;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+#SubTitulo{
+    font-family: 'Share Tech Mono', monospace;
+    color: #DFB76C;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.Iconos { height: 35px; margin: 10px; opacity: 0.5; transition: opacity 0.3s ease; }
+.Iconos:hover { opacity: 1; filter: drop-shadow(0 0 8px rgba(223, 183, 108, 0.6)); }
