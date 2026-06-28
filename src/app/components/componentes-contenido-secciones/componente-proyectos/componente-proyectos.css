@@ -1,0 +1,152 @@
+.lista-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 25px;
+  padding-bottom: 10px;
+}
+
+.proyecto-card {
+  background-color: #121212;
+  border: 1px solid #252525;
+  border-radius: 4px;
+  padding: 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto de iluminación dorada al pasar el ratón por encima */
+.proyecto-card:hover {
+  border-color: #DFB76C; 
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(223, 183, 108, 0.05);
+}
+
+.proyecto-header {
+  border-bottom: 1px solid #222222;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.label { color: #555555; font-size: 0.8rem; margin-left: 5px; }
+.nombre-archivo { color: #DFB76C; font-weight: bold; margin-left: 10px; margin-right: 10px;  }
+
+/* Estados (Colores de las etiquetas de estado) */
+.status { font-size: 0.75rem; font-weight: bold; }
+.status.stable { color: #27c93f; } /* Verde */
+.status.dev { color: #ffbd2e; }    /* Amarillo */
+.status.beta { color: #ff5f56; }   /* Rojo */
+
+/* Bloques de Contenido */
+.proyecto-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.key {
+  color: #DFB76C;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.text { 
+  color: #cccccc; 
+  margin-left: 12px;
+  margin-top: -10px;
+}
+
+.italic { 
+  font-style: italic; 
+  color: #aaaaaa; 
+}
+
+/* Botones inferiores de acción */
+.proyecto-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-action {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border: 1px solid #333333;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-action:hover {
+  background-color: #DFB76C;
+  color: #000000;
+  border-color: #DFB76C;
+}
+
+.cmd {
+  color: #DFB76C;
+  font-weight: bold;
+}
+
+/* Truco CSS: Si el botón se vuelve negro en el hover, el prefijo ./exec pasa a ser negro también */
+.btn-action:hover .cmd {
+  color: #000000;
+}
+.preview-block {
+  margin-top: 15px;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 290px; /* Altura fija para que todas las tarjetas queden alineadas */
+  overflow: hidden;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  margin-top: 6px;
+  background-color: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que llene el espacio sin deformarse */
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.proyecto-card:hover .contenedor-img img {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+.tech-tags {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; 
+  background-color: #181818;
+  border: 1px solid #2d2d2d;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #dddddd;
+  font-family: 'Share Tech Mono', monospace;
+  transition: all 0.2s ease;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.tag:hover { border-color: #DFB76C; background-color: #202020; color: #ffffff; }
+
+.tag img { width: 14px; height: 14px; object-fit: contain; }

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+.ContenedorFondo{
+    background-image: url('./../assets/Images/BackGrounds/BackGroundBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.pantalla-carga {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0d0d; /* El mismo fondo oscuro de tu web */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.consola-loading {
+  width: 90%;
+  max-width: 400px;
+}
+
+.comando-carga {
+  color: #666666;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.texto-porcentaje {
+  color: #DFB76C; /* Tu dorado corporativo */
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.barra-externa {
+  width: 100%;
+  height: 8px;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #222222;
+}
+
+.barra-interna {
+  height: 100%;
+  background-color: #DFB76C;
+  box-shadow: 0 0 8px rgba(223, 183, 108, 0.6);
+  animation: cargarBarraUnica 2s ease-in-out forwards;
+}
+
+@keyframes cargarBarra {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes cargarBarraUnica {
+  0% { width: 0%; }
+  20% { width: 15%; }
+  60% { width: 65%; }
+  100% { width: 100%; }
+}

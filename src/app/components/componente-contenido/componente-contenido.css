@@ -1,0 +1,78 @@
+.terminal-grande {
+  width: 100%;
+  max-width: 950px; 
+  background-color: #0c0c0c;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 30px auto;
+}
+
+.terminal-header {
+  background-color: #161616;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222222;
+}
+
+.botones-ventana {
+  display: flex;
+  gap: 8px;
+}
+.circulo {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.rojo { background-color: #ff5f56; }
+.amarillo { background-color: #ffbd2e; }
+.verde { background-color: #27c93f; }
+
+
+.menu-secciones {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-secciones button {
+  background: none;
+  border: none;
+  color: #777777;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.menu-secciones button:hover {
+  color: #ffffff;
+  background-color: #1c1c1c;
+}
+
+
+.menu-secciones button.activo {
+  color: #DFB76C;
+  background-color: #222222;
+  box-shadow: inset 0 -2px 0 #DFB76C;
+}
+
+.terminal-body {
+  padding: 30px;
+  color: #ffffff;
+  min-height: 450px; 
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.prompt {
+  color: #555555;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
