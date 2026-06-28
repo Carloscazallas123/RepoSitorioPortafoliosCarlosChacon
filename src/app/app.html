@@ -1,4 +1,18 @@
+@if (mostrandoLoading) {
+  <div class="pantalla-carga">
+    <div class="consola-loading">
+      <p class="comando-carga">guest@carlos-portfolio:~$ boot --init</p>
+      <div class="linea-progreso">
+        <span class="texto-porcentaje">Cargando módulos...</span>
+        <div class="barra-externa">
+          <div class="barra-interna"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+<div class="ContenedorFondo">
 <ComponenteBanner/>
-
-
+<ComponenteContenido/>
+</div>
 

@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Share+Tech+Mono&display=swap');
 
-.ContenedorBanner{
-    display: flex;
-    background-image: url('./../../../assets/Images/BackGrounds/BackGroundBanner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
 
 .ContenedorTerminal{ padding-left: 100px; }
 
@@ -60,6 +54,9 @@
   font-size: 0.9rem;
 }
 
+.Iconos { height: 35px; margin: 10px; opacity: 0.5; transition: opacity 0.3s ease; }
+.Iconos:hover { opacity: 1; filter: drop-shadow(0 0 8px rgba(223, 183, 108, 0.6)); }
+
 .boton-desplegable {
   background: none;
   border: none;
@@ -73,23 +70,20 @@
   padding: 5px 0;
 }
 
-.boton-desplegable:hover {
-  color: #DFB76C; /* Se ilumina con tu dorado al pasar el cursor */
-}
-
-/* Pequeña animación para la flecha */
+.boton-desplegable:hover { color: #e4dfdf;  }
 .flecha {
   font-size: 0.9rem;
-  color: #DFB76C;
+  color: #e4dfdf;
   transition: transform 0.2s ease;
-}
 
-.flecha.rotada {
-  transform: rotate(90deg); /* Gira hacia abajo cuando está abierto */
 }
+.flecha.rotada { transform: rotate(90deg); }
+
+.ContenedorSobreMi{ overflow: hidden; }
 
 /* IDS */
 #MiFoto{ height: 750px; }
+
 #TituloNombre{
     font-family: 'Space Grotesk', sans-serif;
     color: #DFB76C;
@@ -105,6 +99,20 @@
     margin: 0;
     padding: 0;
 }
+#DescricpionSobreMi{
+  animation: aparecerLetras 1s ease-out 0.2s forwards;
+  font-family: 'Share Tech Mono', monospace;
+  color: #e4dfdf;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
 
-.Iconos { height: 35px; margin: 10px; opacity: 0.5; transition: opacity 0.3s ease; }
-.Iconos:hover { opacity: 1; filter: drop-shadow(0 0 8px rgba(223, 183, 108, 0.6)); }
+@keyframes aparecerLetras {
+  from {
+    filter: blur(0px);
+  }
+  to { filter: blur(0px);
+  }
+}

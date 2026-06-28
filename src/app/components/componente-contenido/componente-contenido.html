@@ -1,0 +1,43 @@
+<div class="terminal-grande">
+    <div class="terminal-header">
+        <div class="botones-ventana">
+        <span class="circulo rojo"></span>
+        <span class="circulo amarillo"></span>
+        <span class="circulo verde"></span>
+        </div>
+
+        <div class="menu-secciones">
+            <button [class.activo]="seccionActiva === 'proyectos'" 
+            (click)="cambiarSeccion('proyectos')">
+                ./proyectos.sh
+            </button>
+
+            <button [class.activo]="seccionActiva === 'trayectoria'" 
+            (click)="cambiarSeccion('trayectoria')">
+                ./trayectoria.sh
+            </button>
+
+            <button [class.activo]="seccionActiva === 'habilidades'" 
+            (click)="cambiarSeccion('habilidades')">
+                ./habilidades.cfg
+            </button>
+
+        </div>
+    </div>
+    <div class="terminal-body">
+        @if (seccionActiva === 'proyectos') {
+         <div class="seccion-contenedor">
+            <ComponenteProyectos/>
+        </div> }
+
+        @if (seccionActiva === 'trayectoria') {
+        <div class="seccion-contenedor">
+            </div>}
+
+        @if (seccionActiva === 'habilidades') {
+        <div class="seccion-contenedor">
+            </div>}
+
+    </div>
+</div>
+<br>

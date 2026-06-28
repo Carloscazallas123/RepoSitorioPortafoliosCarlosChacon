@@ -1,4 +1,4 @@
-<div class="ContenedorBanner">
+<div style="display: flex;">
     <div class="ContenedorTerminal">
         <div class="contenedor-hero">
             <div class="ventana-terminal">
@@ -8,32 +8,50 @@
                         <span class="boton minimizar"></span>
                         <span class="boton maximizar"></span>
                     </div>
-                    <div class="titulo-ventana">bash - carlos@portfolio:~</div>
+                    <div class="titulo-ventana">bash - charlie@portfolio:~</div>
                 </div>
                 <div class="cuerpo-terminal">
                         <h1 id="TituloNombre">Carlos Chacón Cazallas</h1>
                     <div style="display: flex;">
                         <div class="linea-codigo">
-                            <p id="SubTitulo">Desarrollador Junior OpenFront</p>
+                            <p id="SubTitulo">Programador Junior OpenFront</p>
                         </div>
-                        <div style="padding-left: 40px;">
-                            <a href="" target="_blank">
+                        <div style="padding-left: 20px;">
+                            <a href="mailto:carloschaconcazallas0@gmail.com" target="_blank">
                             <img src="./../../../assets/Images/Iconos/GmailIcon.png" 
                             alt="GmailIcon" class="Iconos">
                             </a>
                         
-                            <a href="" target="_blank">
+                            <a href="https://github.com/Carloscazallas123" target="_blank">
                             <img src="./../../../assets/Images/Iconos/GithubIcon.png" 
                             alt="GithubIcon" class="Iconos">
                             </a>
+
+                            <a href="./../../../assets/CV_Carlos_Chacon_Desarrollador.pdf" 
+                            target="_blank" download="CV_Carlos_Chacon_Desarrollador">
+                            <img src="./../../../assets/Images/Iconos/CVIcon.png" 
+                            alt="CVIcon" class="Iconos">
+                            </a>
                         </div>
                     </div>
-                    <div>
-                        <button class="boton-desplegable" (click)="abierto = !abierto">
-                        <span class="flecha" [class.rotada]="abierto">▶</span>
-                        Sobre mi
-                        </button>
-                    </div>
+                    <div style="display: flex;">
+                        <div style="margin-top: -25px;">
+                            <button class="boton-desplegable" (click)="EfectoEscritura(textoTerminal)">
+                            <span class="flecha" [class.rotada]="abierto">▶</span> Sobre mi </button>
+                        </div> 
+                    </div> <br>
+                    <div class="ContenedorSobreMi" [hidden]="!abierto">
+                        <p #textoTerminal id="DescricpionSobreMi">
+                        Ubicado en Bolaños de Calatrava (Ciudad Real),  
+                        y apodado por algunos de mis amigos como  Charlie  (More Cool),
+                        empezé escribiendo Java en un entorno de Desarrollo  como lo  es 
+                        Eclipse.
+
+                        Pasé de escribir un Println("Hola  Mundo"); 
+                        y hacer páginas simples de HTML, a manejar herramientas de 
+                        codigo abierto como lo es Sprigboot,  consultas de MYSQL o 
+                        FrameWorks como React y Angular.</p>
+                    </div> 
                 </div>
             </div>
         </div>
