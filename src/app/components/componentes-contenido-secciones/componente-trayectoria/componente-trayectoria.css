@@ -1,0 +1,120 @@
+.trayectoria-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Espaciado entre la sección de estudios y la de experiencia */
+.seccion-trayectoria {
+  margin-bottom: 40px;
+}
+
+/* Títulos estilo directorio de consola (./estudios/) */
+.categoria-titulo {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  color: #DFB76C; /* Tu color dorado */
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #252525;
+  padding-bottom: 8px;
+}
+
+.dir {
+  color: #DFB76C;
+}
+
+/* Contenedor de la línea de tiempo */
+.timeline-contenedor {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* La barra vertical de la línea de tiempo */
+.timeline-contenedor::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  bottom: 0;
+  width: 2px;
+  background-color: #252525;
+}
+
+/* Filas individuales */
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0; /* Quita el margen al último elemento de cada bloque */
+}
+
+/* El punto de la línea */
+.timeline-icono {
+  position: relative;
+  z-index: 2;
+  color: #DFB76C;
+  font-size: 1.2rem;
+  background-color: #0a0a0a; /* Para que pise la línea gris de fondo */
+  width: 12px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+}
+
+/* Cuadro de texto */
+.timeline-contenido {
+  background-color: #121212;
+  border: 1px solid #252525;
+  border-radius: 4px;
+  padding: 15px 20px;
+  flex-grow: 1;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Iluminación al pasar el cursor */
+.timeline-item:hover .timeline-contenido {
+  border-color: #DFB76C;
+  box-shadow: 0 4px 12px rgba(223, 183, 108, 0.03);
+}
+
+/* Cabecera interna */
+.timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.timeline-fecha {
+  color: #666666;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.timeline-titulo {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.timeline-sub {
+  color: #888888;
+  font-size: 0.85rem;
+  margin: 0 0 10px 0;
+}
+
+.timeline-texto {
+  color: #cccccc;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
