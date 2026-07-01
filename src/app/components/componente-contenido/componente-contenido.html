@@ -17,11 +17,6 @@
                 ./trayectoria.sh
             </button>
 
-            <button [class.activo]="seccionActiva === 'habilidades'" 
-            (click)="cambiarSeccion('habilidades')">
-                ./habilidades.cfg
-            </button>
-
         </div>
     </div>
     <div class="terminal-body">
@@ -33,10 +28,6 @@
         @if (seccionActiva === 'trayectoria') {
         <div class="seccion-contenedor">
             <ComponenteTrayectoria/>
-            </div>}
-
-        @if (seccionActiva === 'habilidades') {
-        <div class="seccion-contenedor">
             </div>}
 
     </div>
