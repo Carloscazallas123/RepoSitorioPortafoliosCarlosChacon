@@ -230,7 +230,6 @@
   }
 
   #MiFoto { 
-    width: 550px;
-    height: auto;
+    display: none;
    }
 }
