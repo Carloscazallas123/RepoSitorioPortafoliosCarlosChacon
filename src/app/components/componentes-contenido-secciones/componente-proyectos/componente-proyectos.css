@@ -148,3 +148,84 @@
 .tag:hover { border-color: #DFB76C; background-color: #202020; color: #ffffff; }
 
 .tag img { width: 14px; height: 14px; object-fit: contain; }
+@media (max-width: 768px) {
+  
+  /* Aseguramos que la lista distribuya las tarjetas en una columna limpia */
+  .lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Ajustamos los espacios internos de las tarjetas */
+  .proyecto-card {
+    padding: 16px;
+  }
+
+  /* Evitamos que la cabecera rompa líneas de forma desordenada */
+  .proyecto-header {
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    margin-left: 0;
+  }
+
+  .nombre-archivo {
+    font-size: 0.95rem;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .contenedor-img { display: none; }
+
+  /* Modificamos los márgenes de los textos descriptivos internos */
+  .text {
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+
+  .key {
+    padding-left: 0;
+    display: block; 
+    margin-top: 10px;
+  }
+
+ 
+  .tech-tags {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .proyecto-actions {
+    margin-top: 20px;
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .btn-action {
+    width: 100%; 
+    justify-content: center; 
+    box-sizing: border-box;
+    padding: 10px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contenedor-img { display: none; }
+}

@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Share+Tech+Mono&display=swap');
 
+.layout-principal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; 
+}
 
 .ContenedorTerminal{ padding-left: 100px; }
 
@@ -131,7 +137,6 @@
   animation: deslizarTexto 12s linear infinite;
 }
 
-
 @keyframes deslizarTexto {
   0% {
     transform: translate3d(0, 0, 0);
@@ -147,4 +152,85 @@
   }
   to { filter: blur(0px);
   }
+}
+
+/*__Query__*/
+@media (max-width: 768px) {
+
+  .layout-principal {
+    flex-direction: column;
+  }
+
+  .ContenedorTerminal { 
+    padding-left: 0; 
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .contenedor-hero {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 120px;
+    box-sizing: border-box;
+  }
+
+  .ventana-terminal {
+    width: 100% !important;     
+    max-width: 100% !important; 
+    min-width: 0 !important;    
+    box-sizing: border-box;     
+  }
+
+  
+  #TituloNombre {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.2;
+  }
+
+  .cuerpo-terminal > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .cuerpo-terminal div[style*="padding-left: 20px"] {
+    padding-left: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  #SubTitulo {
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  .boton-desplegable {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cuerpo-terminal div[style*="margin-top: -25px"],
+  .cuerpo-terminal div[style*="margin-top: -15px"] {
+    margin-top: 10px !important; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .Iconos {
+    height: 32px;
+    margin: 0 10px;
+  }
+
+  #MiFoto { 
+    width: 550px;
+    height: auto;
+   }
 }

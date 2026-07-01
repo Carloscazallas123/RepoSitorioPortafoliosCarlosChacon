@@ -118,3 +118,75 @@
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  
+  .trayectoria-wrapper {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .seccion-trayectoria {
+    margin-bottom: 30px;
+  }
+
+  
+  .categoria-titulo {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+  }
+
+  
+  .timeline-contenedor {
+    padding-left: 15px;
+  }
+
+  .timeline-contenedor::before {
+    left: 18px; 
+  }
+
+  .timeline-item {
+    gap: 12px; 
+    margin-bottom: 20px;
+  }
+
+  .timeline-icono {
+    font-size: 1rem;
+    margin-left: -2px; 
+  }
+
+  
+  .timeline-contenido {
+    padding: 12px 15px; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
+  .timeline-header {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 2px; 
+    margin-bottom: 6px;
+  }
+
+  .timeline-fecha {
+    font-size: 0.8rem;
+  }
+
+  .timeline-titulo {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .timeline-sub {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+
+  .timeline-texto {
+    font-size: 0.88rem; 
+    line-height: 1.4;
+  }
+}
